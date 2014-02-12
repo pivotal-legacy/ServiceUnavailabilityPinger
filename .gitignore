@@ -1,0 +1,24 @@
+/.bundle
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/log/*.log
+/tmp
+/public/assets
+*.rbc
+*.sassc
+.sass-cache
+
+# vim
+.*.sw[a-z]
+*.un~
+Session.vim
+
+# mine
+.idea
+
+# OSX
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+*.swp
