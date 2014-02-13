@@ -1,13 +1,13 @@
 # Service Unavailability Pinger (SUP)
 
 ## What is it
-SUP is a simple app that demonostrates how to use (Sneakers)[https://github.com/jondot/sneakers]
+SUP is a simple app that demonostrates how to use [Sneakers](https://github.com/jondot/sneakers)
 as a Job queue for Rails.
 
 
 ## Install
 
- * Clone the repo and `bundle`. SUP is based on PostgreSQL.
+ * Clone the repo, `bundle`, `rake db:setup`. SUP uses PostgreSQL as a backend, so make sure to have it up and running.
  * Install RabbitMQ
 
  ```bash
