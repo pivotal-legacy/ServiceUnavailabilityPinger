@@ -11,9 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140213161542) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "github_statuses", force: true do |t|
+    t.string   "code"
+    t.datetime "last_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "github_statuses", ["last_updated_at"], name: "index_github_statuses_on_last_updated_at", using: :btree
 
 end

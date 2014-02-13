@@ -1,0 +1,13 @@
+%h2
+  Most Recent Github Status
+
+.status
+  - if @most_recent_github_status
+    .code
+      Code: #{@most_recent_github_status.code}
+    .updated
+      Updated By Github at: #{@most_recent_github_status.last_updated_at}
+    .checked
+      Checked By us at: #{@most_recent_github_status.created_at}
+
+= button_to "enqueue new polling job", statuses_path
